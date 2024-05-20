@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+
+    <h1>Welcome to <span>RevUp Rental!</span></h1>
+    
+   <div class="order" id="order">
+    <h1>Book <span>  Now!</span></h1>
+
+    <div class="order_main">
+         
+        <div class="order_image">
+             <img src="bsa.png">
+        </div>
+
+        <form action="#">
+
+            <div class="input">
+                <p>Name</p>
+                <input type="text" placeholder="Your name">
+            </div>
+
+            <div class="input">
+                <p>Email</p>
+                <input type="Email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="input">
+                <p>Phone Number</p>
+                <input  placeholder=" Phone Number">
+            </div>
+
+            <div class="input">
+                <p>Desired Motorcycle</p>
+                <select name="Shipping_partner" id="Shipping_partner">
+
+                    <option value="none">Select Your Motorcycle Here</option>
+                    <option value="DHL">Triumph Bobber</option>
+                    <option value="DPD">Yamaha YZF R1</option>
+                    <option value="UPS">RE Classic 350</option>
+                    <option value="post">BMW 1250GS Adventure</option> 
+                    <option value="none">BMW S1000RR </option>
+                    <option value="DHL">TVS Scooter</option>
+                    <option value="DPD">Harley Davidson Fat Bob</option>
+                    <option value="UPS">RE Himalayan 350</option>
+                    <option value="post">Ducati Diavel</option> 
+                    <option value="post">Ducati Panigale</option> 
+                    <option value="none">Kawasaki ZX10R</option>
+                    <option value="DHL">Yamaha YZF R15</option>
+                    <option value="DPD">Kawasaki Z900</option>
+                    <option value="UPS">Honda CBR 650</option>
+                    <option value="post">MV Agusta</option> 
+                    <option value="UPS">RE Classic 500</option>
+    
+                   
+                </select>
+            </div>
+
+            <div class="input">
+                <p>Pickup Date</p>
+                <input type="date"  name=""value="">
+            </div>
+
+            <div class="input">
+                <p>Drop off Date</p>
+                <input type="date"  name=""value="">
+            </div>
+
+            <div class="input">
+                <p>Address</p>
+                <input  placeholder="Your Address">
+            </div>
+
+            <div class="input">
+                <p>Additional Accessories</p>
+                <select name="Shipping_partner" id="Shipping_partner">
+
+                    <option value="none">Select Your Accessory Here</option>
+                    <option value="DHL">Helmet</option>
+                    <option value="DPD">Riding Gear</option>
+                    <option value="UPS">Panniers</option>
+                    <option value="post"> Map System</option> 
+                    
+    
+                   
+                </select>
+            </div>
+            
+
+
+            <a href="#" class="order_btn" onclick="openPopup()">Submit Booking!</a>
+            <div class="popup" id="popup"> 
+                <img src="check2.png">
+                <h2>Thank You!</h2>
+                <p>
+                    Your Details Has Been Successfully Submitted! <br>
+                    Stay Tuned to ride one of our BEASTS!
+                </p>
+                <button type="button" onclick="closePopup()"> OK </button>
+
+            </div>
+
+
+        </form>
+
+    </div>
+</div>
+
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+      popup.classList.add("open-popup");
+    }
+
+    function closePopup(){
+      popup.classList.remove("open-popup");
+    } 
+
+
+   </script>
+
+
+</body>
+</html>

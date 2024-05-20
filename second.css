@@ -1,0 +1,176 @@
+
+
+
+h1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    margin-bottom: -30px;
+}
+
+h1 span{
+    color: #f61010;
+    margin-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Order */
+
+
+.order{
+    width: 95%;
+    height: 10vh;
+}
+
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(2, 0, 0);
+    font-size: 75px;
+    margin-bottom: -130px;
+}
+
+.order h1 span{
+    color: #f61010;
+    margin-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+.order h1 span::after{
+    content: '';
+    width: 100%;
+    height: 0px;
+    background: #037d52;
+    display: block;
+    position: relative;
+    bottom: 10px;
+}
+
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order .order_main .order_image img{
+    width: 1000px;
+}
+
+.order .order_main form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+}
+
+.order .order_main form .input p{
+     line-height: 25px;
+}
+
+.order .order_main form .input{
+    margin: 5px;
+}
+
+.order .order_main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid rgb(245, 236, 219);
+    background: rgb(245, 236, 219);
+    outline: none;
+    border-radius: 3px;
+}
+
+.order .order_main form .input input:focus{
+    border: 2px solid red;
+}
+
+.order .order_main form .order_btn{
+
+    background: #f61010;
+    position: relative;
+    left: 5px;
+    top: 20px;
+    bottom: 70px;
+    width: 120px;
+    height: 20px;
+    cursor: pointer;
+    padding: 15px 25px;
+}
+
+.order .order_main form .order_btn:hover{
+
+  transform: scale(1.1);
+
+}
+
+
+
+
+/* popup */
+
+
+
+
+.popup{
+    width: 400px;
+    background: rgb(5, 110, 124);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: rgb(255, 255, 255);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+
+.popup img{
+    width: 120px;
+    margin-top: -50px;
+    border-radius: 50px;
+    box-shadow:  0 2px 2px rgb(0, 0, 0);
+}
+
+.popup h2{
+    font-size: 55px;
+    font-weight: 800;
+    margin: 10px 0 10px;
+}
+
+.popup p{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 30px 0 10px;
+    padding: 10px;
+}
+
+.popup button{
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px 0;
+    background: #000000;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow:  0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup button:hover{
+    transform: scale(1.1);
+}
